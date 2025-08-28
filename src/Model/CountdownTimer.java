@@ -41,7 +41,6 @@ public class CountdownTimer extends Thread {
                     throw new RuntimeException(e);
                 }
             }
-            timerCallback.onFinished();
         }
 
         if (timeRemainingDouble != 0.0) {
@@ -54,8 +53,8 @@ public class CountdownTimer extends Thread {
                     throw new RuntimeException(e);
                 }
             }
-            timerCallback.onFinished();
         }
+        timerCallback.onFinished();
     }
 
 }
