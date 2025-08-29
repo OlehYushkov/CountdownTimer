@@ -2,7 +2,7 @@ package Service;
 
 import Model.TimerCallback;
 
-public class ShowResultDone extends Thread implements TimerCallback {
+public class ShowResultDone implements TimerCallback {
 
     @Override
     public void onTick(int timeRemaining) {

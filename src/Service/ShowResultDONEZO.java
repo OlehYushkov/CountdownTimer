@@ -2,7 +2,7 @@ package Service;
 
 import Model.TimerCallback;
 
-public class ShowResultDONEZO extends Thread implements TimerCallback {
+public class ShowResultDONEZO implements TimerCallback {
 
     @Override
     public void onTick(int timeRemaining) {
